@@ -4,13 +4,15 @@
   "private": false,
   "description": "Vue.js admin template",
   "author": "smartapant <smartapant@gmail.com>",
+  "hompage": "https://LakHyeonKim.github.io/vuestic-admin",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lint:style": "stylelint --fix src/**/*.{vue,htm,html,css,sss,less,scss}",
     "inspect": "vue-cli-service inspect > inspect.js",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "deploy": "npm run build&&gh-pages -d dist"
   },
   "dependencies": {
     "@types/jest": "^24.0.11",
@@ -71,6 +73,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-vue": "^6.0.1",
+    "gh-pages": "^2.2.0",
     "lint-staged": "^9.2.1",
     "node-sass": "^4.13.0",
     "sass-loader": "^7.3.1",
